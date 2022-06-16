@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--<div id="sectionStart">
+        <h2 id="bienvenu">Bienvenu dans se Quiz</h2>
+        <button id="btnStart" onClick="commencerQuiz()">Commencer le quizz</button>
+    </div>-->
+    <div id="sectionStart">
+        <button id="btnStart" onClick="commencerQuiz()">Commencer le quiz</button>
+    </div>
+    <section id="contenu">
+        <div>
+            <p id="nbQuestion">
+                <span id="nbQuestionDyn"></span> 
+                sur 
+                <span id="nbQuestionFix">3</span>
+            </p>
+        </div>
+
+        <hr>
+            
+        <form>
+            <div id="questionOne">
+                <div class="question">
+                    <label for="question1">1. Qu'est ce qui est jaune et qui attend ?</label>
+                    <div>
+                        <label for="rep1_1">
+                            <input id="rep1_1" type="radio" name="question1" value="jonathan">
+                            Jonathan
+                        </label>
+                    </div>
+                    <div>
+                        <label for="rep1_2">
+                            <input id="rep1_2" type="radio" name="question1" value="poussin">
+                            Un poussin
+                        </label>
+                    </div>
+                </div>
+                <div class="divBtnValider">
+                    <button id="btn" type="button" onClick="validerQuestion1()">Valider</button>
+                </div>
+            </div>
+
+            <div id="questionTwo">
+                <div class="question">
+                    <label for="question2">2. Quelle est la couleur du cheval blanc d'henri IV ?</label>
+                    <div>
+                        <label for="rep2_1">
+                            <input id="rep2_1" type="radio" name="question2" value="blanc">
+                            Blanc
+                        </label>
+                    </div>
+                    <div>
+                        <label for="rep2_2">
+                            <input id="rep2_2" type="radio" name="question2" value="noir">
+                            Noir
+                        </label>
+                    </div>
+                    <div>
+                        <label for="rep2_3">
+                            <input id="rep2_3" type="radio" name="question2" value="brun">
+                            Brun
+                        </label>
+                    </div>
+                </div>
+                <div class="divBtnValider">
+                    <button id="btn" type="button" onClick="validerQuestion2()">Valider</button>
+                </div>
+            </div>
+
+            <div id="questionThree">
+                <div class="question">
+                    <label for="question3">3. Si un oiseau n'a plus d'aile, peut-il encore voler ? lore</label>
+                    <div>
+                        <label for="rep3_1">
+                            <input id="rep3_1" type="radio" name="question3" value="oui">
+                            Oui
+                        </label>
+                    </div>
+                    <div>
+                        <label for="rep3_2">
+                            <input id="rep3_2" type="radio" name="question3" value="non">
+                            Non
+                        </label>
+                    </div>
+                </div>
+                <div class="divBtnValider">
+                    <button id="btn" type="button" onClick="validerQuestion3()">Valider</button>
+                </div>
+            </div>
+        </form>
+        <div id="reponse"></div>
+        
+        <div id="sectionEnd">
+            <h2 id="bienvenu">Bravo, vous êtes allé au bout du Quiz !!</h2>
+            <p id="score">
+                Vous avez
+                <span id="scoreDyn"></span> 
+                bonne(s) réponse(s) sur
+                <span id="nbQuestionFix">3</span>
+                questions
+            </p>
+            <a id="btn" href="" onClick="commencerQuiz()">Recommencer</a>
+        </div>
+        
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

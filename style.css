@@ -1,0 +1,97 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #007bff;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+/* Start */
+
+#btnStart {
+    color: #007bff;
+    font-size: 30px;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    transition: transform 1.5s ease, box-shadow 1s;
+    
+}
+#btnStart:hover {
+    box-shadow: 4px 8px 12px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
+}
+
+/* Question */
+
+#contenu {
+    background-color: white;
+    border: 1px solid rgb(255, 255, 255);
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 300px;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#contenu > div{
+    display: flex;
+    justify-content: end;
+}
+
+#contenu div #nbQuestion {
+    color: #024185;
+    background-color:#4ba2ff77;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0;
+}
+
+.question > label {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+div.question > div > label {
+    display: block;
+    color:#ffffff;
+    background-color:#4ba2ff77;
+    border: 1px solid #0071e9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+div.question > div > label:hover {
+    background-color:#005fc577;
+}
+
+.divBtnValider {
+    text-align: end;
+}
+
+#btn {
+    color: #0071e9;
+    background-color: white;
+    text-decoration: none;
+    border: 2px solid #0071e996;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 25px;
+    transition: color 0.2s, background-color 0.2s;
+    padding: 5px;
+}
+#btn:hover {
+    color: white;
+    background-color: #0071e996;
+}
+
